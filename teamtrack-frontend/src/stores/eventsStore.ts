@@ -1,7 +1,7 @@
-import { Event } from "@/models/event";
+import { Event } from "../models/event.js";
 import { ref } from "vue";
 import { defineStore } from "pinia";
-import useApi, { useApiRawRequest } from "@/models/api";
+import useApi, { useApiRawRequest } from "../models/api.js";
 
 export const useEventsStore = defineStore('eventsStore', () => {
   const apiGetEvents = useApi<Event[]>('events');
